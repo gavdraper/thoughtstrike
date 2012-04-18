@@ -8,6 +8,7 @@ namespace Ideastrike.Models.Repositories
         string HomePage { get; set; }
         string GAnalyticsKey { get; set; }
         int MaxThumbnailWidth { get; set; }
+        int PageSize { get; set; }
         string IdeaStatusDefault { get; set; }
         string IdeaStatusChoices { get; set; }
         void Add(string key, string value);

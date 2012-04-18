@@ -161,6 +161,7 @@ namespace Ideastrike
                 new[]
                     {
                         "~/Scripts/jquery-1.7.1.min.js",
+                        "~/Scripts/jquery.tmpl.js",
                         "~/Scripts/jquery.validate.min.js",
                         "~/Scripts/jquery.fancybox.pack.js",
                         "~/Scripts/jquery.contra.min.js",

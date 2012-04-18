@@ -45,6 +45,23 @@ namespace Ideastrike.Models.Repositories
             }
         }
 
+        private int _pageSize;
+        public int PageSize
+        {
+            get
+            {
+                if (_pageSize==0)
+                    _pageSize = Convert.ToInt32(Get("PageSize"));
+                return _pageSize;
+            }
+            set
+            {
+                Set("PageSize", value.ToString());
+                _pageSize = value;
+            }
+        }
+
+
         private string _welcomeMessage;
         public string WelcomeMessage
         {

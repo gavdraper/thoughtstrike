@@ -129,3 +129,11 @@ border: 0;
 textarea#AdminResponse {
     height: 140px;
 }
+#LoadingPage
+{
+    background: url('images/page_loading.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+    width:40px;
+    height:40px;
+}

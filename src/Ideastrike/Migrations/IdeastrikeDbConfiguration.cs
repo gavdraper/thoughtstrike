@@ -24,6 +24,7 @@ namespace Ideastrike.Migrations
                 context.Settings.AddOrUpdate(s => s.Key, new Setting { Key = "GAnalyticsKey", Value = "" });
                 context.Settings.AddOrUpdate(s => s.Key, new Setting { Key = "IdeaStatusChoices", Value = "New,Active,Completed,Declined" });
                 context.Settings.AddOrUpdate(s => s.Key, new Setting { Key = "IdeaStatusDefault", Value = IdeaStatusDefault });
+                context.Settings.AddOrUpdate(s => s.Key, new Setting { Key = "PageSize", Value = "10" });
                 context.SaveChanges();
             }
 

@@ -1,0 +1,32 @@
+﻿<script id="ideaTemplate" type="text/x-jQuery-tmpl">
+    <li>
+        <div class="pull-left sidebox">
+            <form>
+            <div class="voteinfo">
+                <h3 class="votecount ${IdeaId}">
+                    ${VoteCount}</h3>
+                @Ideastrike.Localization.Strings.Common_Votes
+            </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <button type="button" class="btn vote" data-id="${IdeaId}" data-voted="${UserHasVoted}">
+                    {{if UserHasVoted == "1"}}
+                    @Ideastrike.Localization.Strings.Common_UnVote
+                    {{else}}
+                    @Ideastrike.Localization.Strings.Common_Vote
+                    {{/if}}
+                </button>
+            }
+            </form>
+        </div>
+        <h3 class="ideaheader">
+            <a href="/idea/${IdeaId}">${Title}</a> <span class="label ${ColorClass}">${Status}</span>
+        </h3>
+        <div class="ideadate">
+            ${Time}</div>
+        <div class="ideadesc" style="margin-left: 85px;">
+            {{html Description}}</div>
+        <div class="clearfix">
+        </div>
+    </li>
+</script>
